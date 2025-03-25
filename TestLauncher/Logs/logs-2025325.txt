@@ -130,3 +130,179 @@ Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEra
   at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
   at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
   at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+[3/25/2025 5:00:39 PM] [INF] [LauncherBase.cs::StartUpdateProcess@122] ===> [Game updating] process STARTED! <===
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@76] Update context initializing...
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@77] Software version: 2.6.7
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@78] Software tier: plus
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@80] Update context points to https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@81] Downloader in use: [MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader]
+[3/25/2025 5:00:40 PM] [DBG] [UpdatingContext.cs::Initialize@82] ===> Debug Mode: ENABLED <===
+[3/25/2025 5:00:40 PM] [WRN] [UpdatingContext.cs::SetCurrentVersion@201] No current version found. A full repair may be required.
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@89] Workspace cleaned. Removed 0 files
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::GetLocalFiles@309] Collected information on 2 local files.
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::GetBuildDefinition@337] Retrieved definition for 0.1.2
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::GetPatchesShortestPath@396] Found 0 applicable updates.
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@410] Checking if a more recent version not reachable with patches exists...
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@424] No more recent versions not reachable with patches found. Proceeding with [0.1.2]
+[3/25/2025 5:00:40 PM] [INF] [UpdatingContext.cs::Initialize@97] Update context completed initialization.
+[3/25/2025 5:00:40 PM] [INF] [Repairer.cs::Update@34] Repairing process started.
+[3/25/2025 5:00:43 PM] [ERR] [ChunkedDownloader.cs::ProcessJob@137] ChunkedDownloader raised an error during the main loop:
+Tried to download [https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data] for [10] times, but failed. Reason: The read operation from the resource https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data has an unexpected size. Expected: 24 - Actual: 13 -   at MHLab.Patch.Core.Utilities.Asserts.Assert.AlwaysFail (System.String message) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\Utilities\Asserts\Assert.Always.cs:19 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00102] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:189 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00156] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:203 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.ProcessJob (System.Object state) [0x00087] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:118 
+[3/25/2025 5:00:43 PM] [INF] [ChunkedDownloader.cs::StartJobs@78] Downloaded and stored on disk [1/1] chunks in [2.9034278s] on [1] threads.
+[3/25/2025 5:00:43 PM] [INF] [ChunkedDownloader.cs::StartJobs@83] Download canceled.
+[3/25/2025 5:00:43 PM] [ERR] [Launcher.cs::UpdateFailed@130] ===> [Game updating] process FAILED! <=== - Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'. -   at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'.
+  at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+[3/25/2025 5:02:53 PM] [INF] [LauncherBase.cs::StartUpdateProcess@122] ===> [Game updating] process STARTED! <===
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@76] Update context initializing...
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@77] Software version: 2.6.7
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@78] Software tier: plus
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@80] Update context points to https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@81] Downloader in use: [MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader]
+[3/25/2025 5:02:53 PM] [DBG] [UpdatingContext.cs::Initialize@82] ===> Debug Mode: ENABLED <===
+[3/25/2025 5:02:53 PM] [WRN] [UpdatingContext.cs::SetCurrentVersion@201] No current version found. A full repair may be required.
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@89] Workspace cleaned. Removed 0 files
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::GetLocalFiles@309] Collected information on 2 local files.
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::GetBuildDefinition@337] Retrieved definition for 0.1.2
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::GetPatchesShortestPath@396] Found 0 applicable updates.
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@410] Checking if a more recent version not reachable with patches exists...
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@424] No more recent versions not reachable with patches found. Proceeding with [0.1.2]
+[3/25/2025 5:02:53 PM] [INF] [UpdatingContext.cs::Initialize@97] Update context completed initialization.
+[3/25/2025 5:02:53 PM] [INF] [Repairer.cs::Update@34] Repairing process started.
+[3/25/2025 5:02:57 PM] [ERR] [ChunkedDownloader.cs::ProcessJob@137] ChunkedDownloader raised an error during the main loop:
+Tried to download [https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data] for [10] times, but failed. Reason: The read operation from the resource https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data has an unexpected size. Expected: 24 - Actual: 13 -   at MHLab.Patch.Core.Utilities.Asserts.Assert.AlwaysFail (System.String message) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\Utilities\Asserts\Assert.Always.cs:19 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00102] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:189 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00156] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:203 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.ProcessJob (System.Object state) [0x00087] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:118 
+[3/25/2025 5:02:57 PM] [INF] [ChunkedDownloader.cs::StartJobs@78] Downloaded and stored on disk [1/1] chunks in [3.034565s] on [1] threads.
+[3/25/2025 5:02:57 PM] [INF] [ChunkedDownloader.cs::StartJobs@83] Download canceled.
+[3/25/2025 5:02:57 PM] [ERR] [Launcher.cs::UpdateFailed@130] ===> [Game updating] process FAILED! <=== - Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'. -   at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'.
+  at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+[3/25/2025 5:22:33 PM] [INF] [LauncherBase.cs::StartUpdateProcess@122] ===> [Game updating] process STARTED! <===
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@76] Update context initializing...
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@77] Software version: 2.6.7
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@78] Software tier: plus
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@80] Update context points to https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@81] Downloader in use: [MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader]
+[3/25/2025 5:22:33 PM] [DBG] [UpdatingContext.cs::Initialize@82] ===> Debug Mode: ENABLED <===
+[3/25/2025 5:22:33 PM] [WRN] [UpdatingContext.cs::SetCurrentVersion@201] No current version found. A full repair may be required.
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@89] Workspace cleaned. Removed 0 files
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::GetLocalFiles@309] Collected information on 2 local files.
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::GetBuildDefinition@337] Retrieved definition for 0.1.2
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::GetPatchesShortestPath@396] Found 0 applicable updates.
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@410] Checking if a more recent version not reachable with patches exists...
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@424] No more recent versions not reachable with patches found. Proceeding with [0.1.2]
+[3/25/2025 5:22:33 PM] [INF] [UpdatingContext.cs::Initialize@97] Update context completed initialization.
+[3/25/2025 5:22:33 PM] [INF] [Repairer.cs::Update@34] Repairing process started.
+[3/25/2025 5:22:36 PM] [ERR] [ChunkedDownloader.cs::ProcessJob@137] ChunkedDownloader raised an error during the main loop:
+Tried to download [https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data] for [10] times, but failed. Reason: The read operation from the resource https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data has an unexpected size. Expected: 24 - Actual: 13 -   at MHLab.Patch.Core.Utilities.Asserts.Assert.AlwaysFail (System.String message) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\Utilities\Asserts\Assert.Always.cs:19 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00102] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:189 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00156] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:203 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.ProcessJob (System.Object state) [0x00087] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:118 
+[3/25/2025 5:22:36 PM] [INF] [ChunkedDownloader.cs::StartJobs@78] Downloaded and stored on disk [1/1] chunks in [2.8997153s] on [1] threads.
+[3/25/2025 5:22:36 PM] [INF] [ChunkedDownloader.cs::StartJobs@83] Download canceled.
+[3/25/2025 5:22:36 PM] [ERR] [Launcher.cs::UpdateFailed@130] ===> [Game updating] process FAILED! <=== - Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'. -   at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'.
+  at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+[3/25/2025 5:22:46 PM] [INF] [LauncherBase.cs::StartUpdateProcess@122] ===> [Game updating] process STARTED! <===
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@76] Update context initializing...
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@77] Software version: 2.6.7
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@78] Software tier: plus
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@80] Update context points to https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@81] Downloader in use: [MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader]
+[3/25/2025 5:22:46 PM] [DBG] [UpdatingContext.cs::Initialize@82] ===> Debug Mode: ENABLED <===
+[3/25/2025 5:22:46 PM] [WRN] [UpdatingContext.cs::SetCurrentVersion@201] No current version found. A full repair may be required.
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@89] Workspace cleaned. Removed 0 files
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::GetLocalFiles@309] Collected information on 2 local files.
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::GetBuildDefinition@337] Retrieved definition for 0.1.2
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::GetPatchesShortestPath@396] Found 0 applicable updates.
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@410] Checking if a more recent version not reachable with patches exists...
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::CheckIfRepairToLastBuildIsNeeded@424] No more recent versions not reachable with patches found. Proceeding with [0.1.2]
+[3/25/2025 5:22:46 PM] [INF] [UpdatingContext.cs::Initialize@97] Update context completed initialization.
+[3/25/2025 5:22:46 PM] [INF] [Repairer.cs::Update@34] Repairing process started.
+[3/25/2025 5:22:49 PM] [ERR] [ChunkedDownloader.cs::ProcessJob@137] ChunkedDownloader raised an error during the main loop:
+Tried to download [https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data] for [10] times, but failed. Reason: The read operation from the resource https://raw.githubusercontent.com/Cultivationera/PATCHWorkspace/main/Builds/0.1.2/Game/version.data has an unexpected size. Expected: 24 - Actual: 13 -   at MHLab.Patch.Core.Utilities.Asserts.Assert.AlwaysFail (System.String message) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\Utilities\Asserts\Assert.Always.cs:19 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00102] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:189 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.DownloadChunk (MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloaderContext context, MHLab.Patch.Core.Client.Advanced.IO.Chunked.DownloadableChunk chunk) [0x00156] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:203 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.ProcessJob (System.Object state) [0x00087] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.cs:118 
+[3/25/2025 5:22:49 PM] [INF] [ChunkedDownloader.cs::StartJobs@78] Downloaded and stored on disk [1/1] chunks in [2.8222771s] on [1] threads.
+[3/25/2025 5:22:49 PM] [INF] [ChunkedDownloader.cs::StartJobs@83] Download canceled.
+[3/25/2025 5:22:49 PM] [ERR] [Launcher.cs::UpdateFailed@130] ===> [Game updating] process FAILED! <=== - Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'. -   at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
+Could not find file 'C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\PATCHWorkspace\TestLauncher\Game\version.data'.
+  at System.IO.FileInfo.get_Length () [0x0001d] in <ed969b0e627d471da4848289f9c322df>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo.get_Length()
+  at MHLab.Patch.Core.IO.FilesManager.GetFileInfo (System.String filePath) [0x0000c] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FilesManager.cs:77 
+  at MHLab.Patch.Core.IO.FileSystem.GetFileInfo (MHLab.Patch.Core.IO.FilePath path) [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Core\IO\FileSystem.cs:93 
+  at MHLab.Patch.Core.Client.IO.DownloaderHelper.ValidateDownloadedResult (System.Collections.Generic.List`1[T] entries, MHLab.Patch.Core.IO.IFileSystem fileSystem, MHLab.Patch.Core.Logging.ILogger logger) [0x00028] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\DownloaderHelper.cs:54 
+  at MHLab.Patch.Core.Client.Advanced.IO.Chunked.ChunkedDownloader.Download (System.Collections.Generic.List`1[T] entries, System.Action`1[T] onEntryStarted, System.Action`1[T] onChunkDownloaded, System.Action`1[T] onEntryCompleted) [0x0005e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\IO\Advanced\Chunked\ChunkedDownloader.IDownloader.cs:81 
+  at MHLab.Patch.Core.Client.Repairer.Update () [0x0029e] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Repairer.cs:101 
+  at MHLab.Patch.Core.Client.Runners.UpdateRunner.Update () [0x0001d] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\Runners\UpdateRunner.cs:23 
+  at MHLab.Patch.Core.Client.UpdatingContext.Update () [0x00000] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\Core\UpdatingContext.cs:171 
+  at MHLab.Patch.Launcher.Scripts.LauncherBase.CheckForUpdates () [0x00006] in C:\Users\Culti\OneDrive\Desktop\UnityProject\CultivationEraSurvival\Assets\MHLab\Patch\Launcher\Scripts\LauncherBase.cs:209 
